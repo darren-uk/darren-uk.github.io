@@ -92,6 +92,9 @@ header {
 	background-color: #fafaf6;
 	/* box-shadow: 0 0 12px #000; */
 }
+main {
+	padding: var(--body-padding);
+}
 h1,
 h2 {
 	width: 100%;
@@ -105,17 +108,14 @@ h1 {
 	letter-spacing: 0.6rem;
 	margin: 0 0;
 }
+h3 {
+	margin-top: 1.2em;
+}
 
-h2 {
-	font-family: "PT Sans", sans-serif;
-	font-weight: 700;
-	font-size: 2em;
-	text-transform: uppercase;
+.lined-large {
 	position: relative;
-	letter-spacing: 6px;
 	width: fit-content;
 	margin: auto;
-
 	&:before,
 	&:after {
 		content: " ";
@@ -135,7 +135,65 @@ h2 {
 		right: -60px;
 	}
 }
+.lined-small {
+	position: relative;
+	width: fit-content;
+	margin-left: 40px;
+	&:before,
+	&:after {
+		content: " ";
+		position: absolute;
+		display: block;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 20px;
+		height: 5px;
+		border-top: 1px solid #222222;
+		border-bottom: 1px solid #222222;
+	}
+	&:before {
+		left: -30px;
+	}
+	&:after {
+		right: -30px;
+	}
+}
+.star {
+	--star-size: 20px;
+	position: relative;
+	margin-left: var(--star-size);
+	padding-left: 10px;
+	&:before {
+		content: "";
+		position: absolute;
+		aspect-ratio: 1;
+		height: var(--star-size);
+		background-image: url("../images/star-solid.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		left: calc(0px - var(--star-size));
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+h2 {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+}
+h3 {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 800;
+}
 p {
+	font-family: "PT Sans", sans-serif;
+	color: #333;
+}
+.quote {
 	font-family: "Pacifico", cursive;
 	font-weight: 400;
 }
