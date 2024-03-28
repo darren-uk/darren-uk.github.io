@@ -105,14 +105,25 @@ h1 {
 	font-weight: 400;
 	text-transform: uppercase;
 	font-size: 3em;
-	letter-spacing: 0.6rem;
+	letter-spacing: 0.5rem;
 	margin: 0 0;
 }
 h3 {
 	margin-top: 1.2em;
+	font-size: 1.2em;
+}
+h3 a.external-link {
+	display: inline-block;
+	content: "";
+	width: 1rem;
+	height: 1rem;
+	background-image: url("../images/up-right-from-square-solid.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-.lined-large {
+.lined {
 	position: relative;
 	width: fit-content;
 	margin: auto;
@@ -133,29 +144,6 @@ h3 {
 	}
 	&:after {
 		right: -60px;
-	}
-}
-.lined-small {
-	position: relative;
-	width: fit-content;
-	margin-left: 40px;
-	&:before,
-	&:after {
-		content: " ";
-		position: absolute;
-		display: block;
-		top: 50%;
-		transform: translateY(-50%);
-		width: 20px;
-		height: 5px;
-		border-top: 1px solid #222222;
-		border-bottom: 1px solid #222222;
-	}
-	&:before {
-		left: -30px;
-	}
-	&:after {
-		right: -30px;
 	}
 }
 .star {
@@ -181,7 +169,6 @@ h3 {
 h2 {
 	font-family: "PT Sans", sans-serif;
 	font-weight: 700;
-	font-size: 2em;
 	text-transform: uppercase;
 	letter-spacing: 6px;
 }
@@ -193,7 +180,19 @@ p {
 	font-family: "PT Sans", sans-serif;
 	color: #333;
 }
+.introduction {
+	margin-top: 3em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.introduction img {
+	width: 100%;
+}
 .quote {
+	padding: var(--body-padding);
+}
+.quote p {
 	font-family: "Pacifico", cursive;
 	font-weight: 400;
+	margin-bottom: 0.3em;
 }
