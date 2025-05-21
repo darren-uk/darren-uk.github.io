@@ -4,64 +4,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="personal web page">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/main.css">
-  <title>Darren - personal website</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <title>Crafty Coder</title>
 </head>
 
 <body>
-  <div class="page-container">
-    <header>
-      <h1>Darren Colson</h1>
-      <h2 class="lined">maker of web stuff</h2>
-      <section class="introduction">
-        <picture>
-          <source type="image/webp" srcset="./images/hero-image.webp" width="768px" height="768px">
-          <img src="./images/hero-image.png" width="768px" height="768px"
-            alt="cartoon representation of a young man infront of a laptop with a cat sitting by his side">
-        </picture>
+  <header id="hero">
+    <div>
+      <!-- <h1>Craft & Code</h1> -->
+      <h1>Crafty Coder</h1>
+      <h3>Blog & portfolio of a</h3>
+      <h2>by Darren Colson</h2>
 
-        <div class="quote">
-          <p>Hello,</p>
-          <p>I live near Cambridge, in England. Over 20 years have passed of learning web design and I still find
-            playing with new code exciting and stressful. I share with you my projects and articles, so together we can
-            explore this fairground of design and code.</p>
-          <p>I love playing around with HTML, CSS and Javascript.</p>
+      <img src="images/hero-image.png" class="profile-image" width="121px" height="186px" alt="avatar image">
+    </div>
+    <article id="introduction" class="introduction fade-in">
+      <p>Hello,</p>
+      <p>I'm a chap in his 40's living near Cambridge, in England. Over 20 years have passed of learning web design and
+        I still find
+        playing with new code exciting and challenging.</p>
+      <p> I share with you my projects and articles exploring HTML, CSS and Javascript.</p>
+      <br>
+      <p>As well as coding I love to try new arts and crafts. They keep me relaxed and my mind sharp.</p>
+    </article>
+  </header>
+  <main>
+    <h2>Projects</h2>
+    <section id="project-list" class="project-list">
+
+      <div class="card card01">
+        <div class="card-header">
+          <h3>Wordle Clone</h3>
+          <img src="./images/puzzle-piece-solid.svg" alt="puzzle logo">
         </div>
-      </section>
 
-    </header>
-    <main>
-      <h2 class="lined">My projects</h2>
-      <a class="external-link" href="https://darren-uk.github.io/apptest">
-        <h3 class="star">
-          Speed Scrabble
-        </h3>
-      </a>
-      <p>Timer to speed up the game of scrabble</p>
-      <a class="external-link" href="#">
-        <h3 class="star">Weight Tracker</h3>
-      </a>
-      <p>Keep track of your weight in lbs</p>
-      <a class="external-link" href="#">
-        <h3 class="star">KSP Planet Data </h3>
-      </a>
-      <p>Game data for Kerbal Space program 1</p>
-      <a class="external-link" href="#">
-        <h3 class="star">Kerbalism Science Data</h3>
-      </a>
-      <p>Game data for Kerbal Space Program 1 , Kerbalism mod</p>
-      <a class="external-link" href="#">
-        <h3 class="star">Wordle Clone </h3>
-      </a>
-      <p>A wordle clone game with themes and unlimited attempts</p>
+        <p class="card-description">A wordle clone game with themes and unlimited attempts</p>
+        <a href="#" class="card-link">Visit project</a>
+      </div>
 
-    </main>
-  </div>
-  <footer>
+      <div class="card card02">
+        <div class="card-header">
+          <h3>Weight Tracker</h3>
+          <img src="./images/weight-scale-solid.svg" alt="puzzle logo">
+        </div>
 
-  </footer>
+        <p class="card-description">Keep track of your weight in lbs</p>
+        <a href="#" class="card-link">Visit project</a>
+      </div>
+
+      <div class="card card03">
+        <div class="card-header">
+          <h3>KSP Planet Data</h3>
+          <img src="./images/rocket-solid.svg" alt="puzzle logo">
+        </div>
+
+        <p class="card-description">Game data for Kerbal Space program 1</p>
+        <a href="#" class="card-link">Visit project</a>
+      </div>
+
+      <div class="card card04">
+        <div class="card-header">
+          <h3>KSP Science Data</h3>
+          <img src="./images/satellite-solid.svg" alt="puzzle logo">
+        </div>
+
+        <p class="card-description">Game data for Kerbal Space Program 1 , Kerbalism mod</p>
+        <a href="#" class="card-link">Visit project</a>
+      </div>
+
+      <div class="card card05">
+        <div class="card-header">
+          <h3>Speed Scrabble</h3>
+          <img src="./images/stopwatch-solid.svg" alt="puzzle logo">
+        </div>
+
+        <p class="card-description">Timer to speed up the game of scrabble</p>
+        <a href="#" class="card-link">Visit project</a>
+      </div>
+
+    </section>
+  </main>
 
 </body>
 

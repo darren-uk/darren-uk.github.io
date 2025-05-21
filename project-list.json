@@ -1,0 +1,36 @@
+{
+	"apps": [
+		{
+			"name": "speed scrabble",
+			"description": "Timer to speed up game of Scrabble",
+			"skills": ["html", "css", "javascript"]
+		},
+		{
+			"name": "Weight Tracker",
+			"description": "Keep track of your weight in lbs",
+			"skills": ["html", "css", "javascript"]
+		},
+		{
+			"name": "KSP Planet data",
+			"description": "Game data for Kerbal Space program 1",
+			"skills": ["html", "css", "javascript"]
+		},
+		{
+			"name": "Kerbalism science data",
+			"description": "Game data for Kerbal Space Program 1 , Kerbalism mod",
+			"skills": ["html", "css", "javascript"]
+		},
+		{
+			"name": "Wordle Clone",
+			"description": "A wordle clone game with themes and unlimited attempts",
+			"skills": ["html", "css", "javascript"]
+		}
+	],
+	"craft_projects": [
+		{
+			"name": "Nans blanket",
+			"description": "Learning to knit for the first time & repairing Nans blanket",
+			"skills": ["knitting"]
+		}
+	]
+}
