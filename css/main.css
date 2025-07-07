@@ -233,6 +233,9 @@ p {
 	flex-wrap: wrap;
 	margin-top: 2.5rem;
 	gap: 5px;
+	img {
+		flex: 1 1 200px;
+	}
 }
 
 @media screen and (max-width: 960px) {
